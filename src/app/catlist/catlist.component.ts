@@ -1,4 +1,4 @@
-import { CatService } from './../../services/cat.service';
+import { CatService } from './../services/cat.service';
 import { Component, OnInit } from '@angular/core';
 import { CatModel } from 'src/app/models/cat';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CatlistComponent implements OnInit {
 
-  constructor(private catService: CatService, 
+  constructor(private catService: CatService,
     private route: ActivatedRoute,
     private router: Router) { }
 
